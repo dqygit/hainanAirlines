@@ -61,11 +61,43 @@
       </div>
     </div>
   </header>
+  <!-- header部分 -->
 
+  <!-- nav部分 -->
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 navBar" style="height: 50px;">
+          <ul class="nav nav-tabs" style="border:unset">
+            <% for(let i=0;i<tabBars.length;i++){ %>
+              <li role="presentation">
+                <a href="#">
+                  <%=tabBars[i] %>
+                </a>
+              </li>
+              <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="banner">
+    <img style="display:block;" src="/images/index/W020200430534025494894.jpg" alt="">
+    <img src="/images/index/W020210126564614594550.jpg" alt="">
+    <img src="/images/index/W020210128596146937708.jpg" alt="">
+    <img src="/images/index/W020210205565194817277.jpg" alt="">
+
+    <div class="paginationBanner">
+
+    </div>
+
+  </section>
   <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
   <script src="/js/jquery.js"></script>
   <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
   <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/index/index.js"></script>
 </body>
 
 </html>
